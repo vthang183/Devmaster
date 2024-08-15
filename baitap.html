@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Bai 1: Doc du lieu tu promt va in ra man hinh ho ten, ngay thang nam sinh, tuoi, que quan
+        //  let name = prompt("Nhập vào họ tên: ");
+        //  let birth = prompt("Nhập vào ngày/tháng/năm sinh: ");
+        //  let date = prompt("Nhập vào tuổi: ");
+        //  let hometown = prompt("Nhập vào quê quán: ");
+
+        // document.write("Họ và tên: ", name ,"<br>");
+        // document.write("Ngày/tháng/năm sinh: ", birth,"<br>");
+        // document.write("Tuổi: ", date,"<br>");
+        // document.write("Quê quán: ", hometown,"<br>");
+
+        //Bai2: Giai phuong trinh bac 1 nhap du lieu tu ban phim
+        // let a = parseFloat(prompt("Nhập a: "));
+        // let b = parseFloat(prompt("Nhập b: "));
+        // document.write(`Phương trình có dạng: ${a}x + ${b} = 0`);
+        // if (a === 0) {
+        //     if (b === 0) {
+        //         document.write("Phương trình có vô số nghiệm.");
+        //     } else {
+        //         document.write("Phương trình vô nghiệm.");
+        //     }
+        // } else {
+        //     let x = -b / a;
+        //     document.write(`Phương trình có nghiệm x = ${x}`);
+        // }
+        //Bai3: Giai phuog trinh bac 2 nhap du lieu tu ban phim
+        // let a = parseFloat(prompt("Nhập a: "));
+        // let b = parseFloat(prompt("Nhập b: "));
+        // let c = parseFloat(prompt("Nhập c: "));
+        // document.write(`Phương trình có dạng: ${a}x^2 + ${b}x + ${c} = 0<br>`);
+
+        // if (a === 0) {
+        //     if (b === 0) {
+        //         if (c === 0) {
+        //             document.write("Phương trình có vô số nghiệm.");
+        //         } else {
+        //             document.write("Phương trình vô nghiệm.");
+        //         }
+        //     } else {
+        //         let x = -c / b;
+        //         document.write(`Phương trình có nghiệm x = ${x}`);
+        //     }
+        // } else {
+        //     let delta = b * b - 4 * a * c;
+        //     if (delta < 0) {
+        //         document.write("Phương trình vô nghiệm thực.");
+        //     } else if (delta === 0) {
+        //         let x = -b / (2 * a);
+        //         document.write(`Phương trình có nghiệm kép x = ${x}`);
+        //     } else {
+        //         let x1 = (-b + Math.sqrt(delta)) / (2 * a);
+        //         let x2 = (-b - Math.sqrt(delta)) / (2 * a);
+        //         document.write(`Phương trình có hai nghiệm phân biệt:<br>`);
+        //         document.write(`x1 = ${x1}<br>`);
+        //         document.write(`x2 = ${x2}`);
+        //     }
+        // }
+
+        //Bai4: Nhap vao mot so bat ki, in ra man hinh cac so nguyen to nho hon so vua nhap
+        // let n = parseInt(prompt("Nhập vào số bất kì: "));
+        // document.write(`Các số nguyên tố nhỏ hơn ${n}:<br>`);
+
+        // function isPrime(num) {
+        //     if (num < 2) {
+        //         return false;
+        //     } else {
+        //         for (let i = 2; i <= Math.sqrt(num); i++) {
+        //             if (num % i === 0) {
+        //                 return false;
+        //             }
+        //         }
+        //         return true;
+        //     }
+        // }
+
+        // for (let i = 2; i < n; i++) {
+        //     if (isPrime(i)) {
+        //         document.write(i + "<br>");
+        //     }
+        // }
+
+        //Bai5: Nhap vao mot so bat ki in ra man hinh cac so chia het cho 3
+        // let n = parseInt(prompt("Nhập vào số bất kì: "));
+
+        // for (let i = 0; i <= n; i++) {
+        //     if (i % 3 == 0) {
+        //         document.write(i + " ");
+        //     }
+        // }
+        //Bai 6: Nhap vao ngay thang nam in ra ngay trong tuan biet ngay 1 la thu 3
+        // let day = parseInt(prompt("Nhập vào ngày: "));
+        // let month = parseInt(prompt("Nhập vào tháng: "));
+        // let year = parseInt(prompt("Nhập vào năm: "));
+
+        // // Tạo một đối tượng Date với ngày 1 của tháng đã nhập
+        // let firstDay = new Date(year, month - 1, 1);
+
+        // // Tính số ngày chênh lệch giữa ngày nhập vào và ngày 1
+        // let differenceInDays = day - 1;
+
+        // // Xác định thứ trong tuần cho ngày nhập vào
+        // let weekDay = (differenceInDays + 2) % 7; // Cộng thêm 2 vì ngày 1 là thứ Ba (2 là chỉ số của thứ Ba)
+
+        // let dayOfWeek = '';
+
+        // switch (weekDay) {
+        //     case 0:
+        //         dayOfWeek = "Chủ nhật";
+        //         break;
+        //     case 1:
+        //         dayOfWeek = "Thứ hai";
+        //         break;
+        //     case 2:
+        //         dayOfWeek = "Thứ ba";
+        //         break;
+        //     case 3:
+        //         dayOfWeek = "Thứ tư";
+        //         break;
+        //     case 4:
+        //         dayOfWeek = "Thứ năm";
+        //         break;
+        //     case 5:
+        //         dayOfWeek = "Thứ sáu";
+        //         break;
+        //     case 6:
+        //         dayOfWeek = "Thứ bảy";
+        //         break;
+        // }
+
+        // document.write(`Ngày ${day}/${month}/${year} là ${dayOfWeek}`);
+        
+        //Bai 7: Nhap vao mot ky tu bat ky. Kiem tra do co phai kieu so hay khong
+        // neu dung dua ve thong bao true, neu sai nhap lai
+        let input;
+
+        while (true) {
+            input = prompt("Nhập vào một ký tự bất kì: ");
+            
+            // Kiểm tra nếu input là số và không phải là chuỗi rỗng
+            if (!isNaN(input) && input.trim() !== '') {
+                document.write(`${input} là một số.`);
+                break; // Thoát khỏi vòng lặp nếu input hợp lệ
+            } else {
+                alert("Giá trị không hợp lệ. Vui lòng nhập lại."); // Thông báo lỗi và yêu cầu nhập lại
+            }
+        }
+
+    </script>
+</body>
+</html>
